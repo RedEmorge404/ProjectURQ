@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectURQ</title>
+    <script>
+        function checkPassword() {
+            var enteredPassword = document.getElementById("passwordInput").value;
+            var resultDiv = document.getElementById("result");
+
+            // Check entered password and redirect if it matches a specific code
+            if (enteredPassword === "RED") {
+                resultDiv.innerHTML = "who...?";
+            } else if (enteredPassword === "D") {
+                resultDiv.innerHTML = "D: 2107";
+            } else if (enteredPassword === "VOIDERANTS") {
+                resultDiv.innerHTML = "Creatures Who cease to Exist, Unable to control Themselves, Screaming While Colours are dissapearing from Their Reality";
+            } else if (enteredPassword === "BLUE") {
+                resultDiv.innerHTML = "A Good friend";
+            } else if (enteredPassword === "SISTERS") {
+                resultDiv.innerHTML = "One Of them Don't Exist";
+            } else if (enteredPassword === "TRISPIDER") {
+                resultDiv.innerHTML = "What The fuck is a Trispider";
+            } else if (enteredPassword === "ENEMY") {
+                resultDiv.innerHTML = "R's, G's and B's...... They're not worthy... Not anymore";
+            } else if (enteredPassword === "FRIENDS") {
+                resultDiv.innerHTML = "He wanted me to become his friend after what i did to him... i feel guilty";
+            } else if (enteredPassword === "EYE") {
+                resultDiv.innerHTML = "Weird, Unpredictable and... Unknown... i dont like those people";
+            } else if (enteredPassword === "ME") {
+                resultDiv.innerHTML = "His real full Name";
+            } else if (enteredPassword === "R") {
+                resultDiv.innerHTML = "My Favourite letter";
+            } else if (enteredPassword === "MREM") {
+                resultDiv.innerHTML = "His full Name";
+            } else if (enteredPassword === "GREEN") {
+                resultDiv.innerHTML = "his silliness is too much that he alomst destroyed a full universe";
+            } else if (enteredPassword === "CAT") {
+                resultDiv.innerHTML = "REDirecting... please wait";
+                // Redirect to a specific website (e.g., "https://example.com")
+                window.location.href = "https://discord.gg/8fHJKfXXD4";
+            } else if (enteredPassword === "LOGS") {
+                resultDiv.innerHTML = "Sorry, This Code doesnt Work... Yet, Try again another Time";
+            } else {
+                resultDiv.innerHTML = "incorrect";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>ProjectURQ</h1>
+    <h2> <b>Ver 0.1</b> </h2>
+    <hr>
+    <h3>website is still incomplete</h3>
+    <h4>so please trust the proccess</h4>
+    <hr>
+    <h5>Codes must only have Capital letters</h5>
+     <br><br><br>
+    <input type="password" id="passwordInput" placeholder="Enter code here">
+    <button onclick="checkPassword()">ENTER</button>
+
+    <div id="result"></div>
+</body>
+</html>
